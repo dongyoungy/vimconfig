@@ -17,6 +17,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 set colorcolumn=81
+unlet g:ctrlp_custom_ignore
+if exists("g:ctrlp_user_command")
+  unlet g:ctrlp_user_command
+endif
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/lib/*,*/build/*
 
 
 let g:indent_guides_enable_on_vim_startup = 1
@@ -33,6 +38,3 @@ let g:clang_format#style_options = {
       \ "BasedOnStyle" : "Google"}
 let g:clang_format#auto_format=1
 let g:clang_format#auto_format_on_insert_leave=0
-
-" ctrlp
-let g:ctrlp_custom_ignore = {'dir': 'lib\|git\|DS_Store'}
