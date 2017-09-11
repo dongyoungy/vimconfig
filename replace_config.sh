@@ -10,3 +10,7 @@ current_dir=$PWD
 cd ~ && ln -s $current_dir/.vimrc.local .vimrc.local
 cd ~ && ln -s $current_dir/.vimrc.bundles.local .vimrc.bundles.local
 cd ~ && ln -s $current_dir/.vimrc.before.local .vimrc.before.local
+
+mkdir -p ~/.vim/colors
+cp $current_dir/base16-railscasts.vim ~/.vim/colors
+
