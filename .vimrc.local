@@ -16,7 +16,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-set colorcolumn=81
 unlet g:ctrlp_custom_ignore
 if exists("g:ctrlp_user_command")
   unlet g:ctrlp_user_command
@@ -44,7 +43,7 @@ let g:clang_format#auto_format_on_insert_leave=0
 " railscasts theme
 highlight clear SignColumn
 highlight VertSplit    ctermbg=236
-highlight ColorColumn  ctermbg=237
+highlight ColorColumn  ctermbg=250
 highlight LineNr       ctermbg=236 ctermfg=240
 highlight CursorLineNr ctermbg=236 ctermfg=240
 highlight CursorLine   ctermbg=236
@@ -56,3 +55,5 @@ highlight Visual       ctermbg=3   ctermfg=0
 highlight Pmenu        ctermbg=240 ctermfg=12
 highlight PmenuSel     ctermbg=3   ctermfg=1
 highlight SpellBad     ctermbg=0   ctermfg=1
+
+set colorcolumn=81
