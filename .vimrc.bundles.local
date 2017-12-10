@@ -1,2 +1,3 @@
 UnBundle 'bling/vim-bufferline'
 Bundle 'rhysd/vim-clang-format'
+Bundle 'vim-airline/vim-airline-themes'
