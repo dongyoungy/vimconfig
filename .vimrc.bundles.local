@@ -1,3 +1,5 @@
 UnBundle 'bling/vim-bufferline'
 Bundle 'rhysd/vim-clang-format'
-Bundle 'vim-airline/vim-airline-themes'
+Plugin 'morhetz/gruvbox'
+Plugin 'heracek/HTML-AutoCloseTag', {'name': 'HTML-AutoCloseTag2'}
+UnBundle 'amirh/HTML-AutoCloseTag'
